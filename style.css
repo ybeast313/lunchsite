@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Oswald', sans-serif;
+}
+
+.header {
+  background: #dbd5d7 url(https://www.transparentpng.com/thumb/man/rTkJ7v-man-png-image.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 100vh;
+}
+
+.header ul{
+  list-style-type: none;
+  margin-top: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.nav {
+  margin-right: 50px;
+}
+
+.man {
+  width: 500px;
+}
+
+.logo {
+  margin: 1rem 1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.furniture {
+  background: #191b1c url(http://karimrashid.com/media/categories/xxc4uk33b.png);
+  grid-area: furniture;
+  height: 650px;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.buildings {
+  background: #1a1d1e url(http://karimrashid.com/media/categories/ill4u79z0.png);
+  grid-area: buildings;
+  background-position: bottom right;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+.interiors {
+  background: #301b20 url(http://karimrashid.com/media/categories/hvm4ui4hx.png);
+  grid-area: interiors;
+  background-position: center left 100px;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.grid1{
+  color: white;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-areas: 
+  "furniture buildings"
+  "furniture interiors";
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  margin-left: 1rem;
+}
+
+.interiors .text {
+  bottom: 50%;
+}
+
+.furniture:hover {
+  background-color: #3c4144;
+}
+
+.buildings:hover{
+  background-color: #8b720b;
+
+}
+.interiors:hover{
+  background-color: #0443b3;
+}
+
+
+
+
